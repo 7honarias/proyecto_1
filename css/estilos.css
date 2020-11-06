@@ -1,3 +1,11 @@
+/* ---------------Variables */
+:root{
+    --green-color:#7ACC2D;
+    --white-color:white;
+}
+
+
+
 html, body{
     padding:0px;
     margin:0px;
@@ -8,9 +16,9 @@ html, body{
 
 nav{
     display: flex;
-    background-color: #7ACC2D;
+    background-color: var(--green-color);
     padding: 10px;
-    color: white;
+    color: var(--white-color);
     justify-content: space-between;
     align-items: center;
     
@@ -28,7 +36,7 @@ nav li a{
 }
 
 nav li a:hover{
-    color: white;
+    color: var(--green-color);
 
 }
 
@@ -40,17 +48,39 @@ nav li a:hover{
 }
 
 .products{
-    background-image: url("../images/curve.jpg");
-    height: 200px;
-    background-size: cover;
+    background-image: url("../images/curve.png");
+    padding: 10%;
     background-position: center top;
-    padding: 15%;
+    background-repeat: no-repeat;
     display: flex;
-}
+    height: 90px;
+    background-size: cover;
+  
+  }
 .product{
     padding: 10px;
+    margin-top: -160px;
 }
-.product .content{
-    background-color: white;
+.content{
+    text-align: center;
+    background-color: var(--white-color);
     padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 0 1px #c1bcbc;
+}
+.image-product{
+    text-align: center;
+  }
+
+.main_btn{
+    padding: 10px;
+    background-color: var(--green-color);
+    width: 100%;
+    border: 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    color: var(--white-color);
+  }
+.main_btn:hover{
+    background-color: #5e9e22;
 }
