@@ -1,4 +1,4 @@
-@media (max-width: 600px){
+@media (max-width: 650px){
     .products{
         display: inherit;
         height: auto;
@@ -9,5 +9,9 @@
     }
     .main_section{
         padding: 5%;
+    }
+
+    .options{
+        display: initial;
     }
 }
